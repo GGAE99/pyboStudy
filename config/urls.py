@@ -27,3 +27,6 @@ urlpatterns = [
     path('', base_views.index, name='index'),  # '/' 에 해당되는 path
    # path('onana/', include('onana.urls')),
 ]
+
+# handler404 변수 추가
+handler404 = 'common.views.page_not_found'
