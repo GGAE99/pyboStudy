@@ -5,6 +5,7 @@ from ..models import Question
 from django.db.models import Q
 
 def index(request):
+    3 / 0  # 강제로 오류발생
     page = request.GET.get('page', '1') # 페이지
     # kw 변수에 받아온 kw 값 추가 (검색어)
     kw = request.GET.get('kw', '')  # 검색어
